@@ -45,7 +45,9 @@ describe('helpers', () => {
   describe('#roundedAverage', () => {
 
     it('can round a decimal', () => {
-
+      var array = [7, 3, 1];
+      var avg = helpers.roundedAverage(array);
+      expect(avg).toEqual(4);
     });
 
   });
