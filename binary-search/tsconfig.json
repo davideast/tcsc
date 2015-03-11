@@ -13,7 +13,7 @@
         "!./node_modules/**/*.ts"
     ],
     "files": [
-        "./binary-search-test.ts",
-        "./binary-search.ts"
+        "./binary-search.ts",
+        "./binary-searchSpec.ts"
     ]
 }
