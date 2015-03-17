@@ -13,10 +13,13 @@ module tscs {
       }
     }
 
-    private findRoot(i: number): number {
+    protected findRoot(i: number): number {
       // chase parent pointer until we reach the root (depth of i array accesses)
-      while(i !== this.id[i]) {
-        i = this.id[i];
+      var id = this.id;
+      while(i !== id[i]) {
+        // flatten tree - make every other node in path point to its grandparent
+        id[i] = id[id[i]];
+        i = id[i];
       }
       return i;
     }
