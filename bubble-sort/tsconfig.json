@@ -1,19 +1,20 @@
 {
-    "version": "1.4.1",
+    "version": "1.5.0-alpha",
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
         "declaration": false,
         "noImplicitAny": false,
         "removeComments": true,
-        "noLib": false
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
     },
     "filesGlob": [
         "./**/*.ts",
         "!./node_modules/**/*.ts"
     ],
     "files": [
-        "./binary-search.ts",
-        "./binary-searchSpec.ts"
+        "./bubble-sort.ts"
     ]
 }
